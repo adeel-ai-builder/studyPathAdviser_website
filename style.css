@@ -1,0 +1,123 @@
+/* Center whole page */
+body {
+    min-height: 100vh;
+    margin: 0;
+    background: #f1f5f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Selection Card */
+.selection-card {
+    background: white;
+    padding: 30px;
+    border-radius: 14px;
+    width: 100%;
+    max-width: 420px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+    animation: fadeIn 0.6s ease;
+}
+
+/* Heading */
+.selection-card h2 {
+    margin-bottom: 20px;
+    color: #1f2937;
+}
+
+/* Dropdowns */
+.selection-card select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #cbd5f5;
+    font-size: 15px;
+}
+
+/* Button */
+.generate-btn {
+    width: 100%;
+    padding: 12px;
+    border-radius: 25px;
+    background: linear-gradient(135deg, #16a34a, #22c55e);
+    color: white;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.generate-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(22,163,74,0.4);
+}
+
+/* Hide animation */
+.hide {
+    animation: slideOut 0.5s ease forwards;
+}
+
+/* Result Container – Centered Material Card */
+.result-container {
+    margin-top: 100px;
+    width: 100%;
+    max-width: 420px;
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 12px 35px rgba(0,0,0,0.14);
+    display: none;
+    animation: materialFade 0.6s ease forwards;
+}
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes slideOut {
+    from { opacity: 1; transform: translateY(0); }
+    to { opacity: 0; transform: translateY(-20px); }
+}
+/* Material appearance animation */
+@keyframes materialFade {
+    from {
+        opacity: 0;
+        transform: translateY(30px) scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+/* Study item row */
+.study-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 14px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background: #f8fafc;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* View Button */
+.view-btn {
+    padding: 6px 16px;
+    font-size: 13px;
+    border-radius: 20px;
+    border: none;
+    background: linear-gradient(135deg, #2563eb, #3b82f6);
+    color: white;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+.view-btn:hover {
+    transform: scale(1.06);
+    box-shadow: 0 6px 14px rgba(37,99,235,0.45);
+}
+

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Path Adviser</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="selection-section" class="selection-card">
+    <h2>Select Your Learning Path</h2>
+
+    <select id="level">
+        <option value="">Select Level</option>
+        <option value="beginner">Beginner</option>
+        <option value="intermediate">Intermediate</option>
+    </select>
+
+    <select id="interest">
+        <option value="">Select Field</option>
+        <option value="ai">Artificial Intelligence</option>
+        <option value="web">Web Development</option>
+        <option value="data">Data Science</option>
+        <option value="os">Operating System</option>
+    </select>
+
+    <button onclick="getPath()" class="generate-btn">Generate Study Path</button>
+</div>
+
+<div id="result" class="result-container"></div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
